@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main css file -->
+    <link rel="stylesheet" href="CSS/styel.css">
+    <!-- title -->
+    <title>Login & Registration Form</title>
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- header icon -->
+    <link rel="icon"
+        href="https://png.pngtree.com/png-vector/20190121/ourlarge/pngtree-apiappcodingdeveloperlaptop-white-line-icon-in-circle-ba-png-image_469743.jpg"
+        type="image/x-icon" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav-logo">CodingLab</a>
+            <ul class="nav-items">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Product</a>
+                    <a href="#" class="nav-link">Service</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="button form-open">Login</button>
+        </nav>
+    </header>
+    <!-- header -->
+    <!-- ----------------------------------------------------------------->
+    <!-- home -->
+    <section class="home">
+        <div class="form-container">
+            <i class="fa-solid fa-xmark form-close"></i>
+
+            <!-- login -->
+            <div class="login login-form">
+                <form action="#" method="get">
+                    <h2>Login</h2>
+
+
+                    <div class="input-box">
+                        <input type="email" placeholder="Enter your email" required>
+                        <i class="fa-regular fa-envelope email"></i>
+                    </div>
+
+
+                    <div class="input-box">
+                        <input type="password" placeholder="Enter your password" required>
+                        <i class="fa-solid fa-lock password"></i>
+                        <i class="fa-regular fa-eye-slash pw-hide"></i>
+                    </div>
+
+                    <div class="option-feild">
+                        <span class="checkbox">
+                            <input type="checkbox" name="remmber" id="check">
+                            <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot-pw">Forgot Password</a>
+                    </div>
+
+
+                    <button class="button login">Login now</button>
+
+
+                    <div class="login-signUp">
+                        Don't have an acoount ? <a href="#" id="signUp">signUp</a>
+                    </div>
+                </form>
+            </div>
+            <!-- login -->
+
+
+
+            <!-- signUp -->
+            <div class="form signUp-form">
+                <form action="#" method="get">
+                    <h2>Sign Up</h2>
+
+
+                    <div class="input-box">
+                        <input type="email" placeholder="Enter your email" required>
+                        <i class="fa-regular fa-envelope email"></i>
+                    </div>
+
+
+                    <div class="input-box">
+                        <input type="password" placeholder="create a password" required>
+                        <i class="fa-solid fa-lock password"></i>
+                        <i class="fa-regular fa-eye-slash pw-hide"></i>
+                    </div>
+
+
+                    <div class="input-box">
+                        <input type="password" placeholder="confirm your password" required>
+                        <i class="fa-solid fa-lock password"></i>
+                        <i class="fa-regular fa-eye-slash pw-hide"></i>
+                    </div>
+
+
+
+
+                    <button class="button signUp">signUp now</button>
+
+
+                    <div class="login-signUp">
+                        Already have an acoount ? <a href="#" id="login">login</a>
+                    </div>
+                </form>
+                <!-- signUp -->
+            </div>
+
+    </section>
+    <!-- home -->
+
+    <!-- main js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

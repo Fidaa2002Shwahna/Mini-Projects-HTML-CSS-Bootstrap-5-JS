@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- main css file -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- font awesome library -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- title -->
+    <title>Responsive Login and Signup Form</title>
+</head>
+
+<body>
+    <!-- main content -->
+    <div class="contnet">
+        <!-- login form -->
+        <form action="" class="form-login" method="post">
+            <div class="HeaderTitle">
+                <p>Login</p>
+            </div>
+
+
+            <div class="email-input">
+                <input required type="email" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="password-input">
+                <input required type="password" name="password" id="password" placeholder="Password">
+                <i class="fa-regular fa-eye-slash pw-hide"></i>
+            </div>
+
+
+            <div class="forget">
+                <a href="#">Forgot password ?</a>
+            </div>
+
+
+            <div class="logbtn">
+                <button class="btn">Login</button>
+            </div>
+
+
+            <div class="haveAccount">
+                Don't have an account ? <a href="#" id="haveAccount">SignUp</a>
+            </div>
+
+            <div class="line">
+                <hr>
+                <p> Or</p>
+                <hr>
+            </div>
+
+            <div class="logFaceBook">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-3-logo-png-transparent.png"
+                    alt="facebookIcon">
+                <button class="btn">Login with Facebook</button>
+            </div>
+
+
+            <div class="logGoogle">
+                <img src="https://pixlok.com/wp-content/uploads/2021/04/Google-Icon-PNG-768x768.jpg" alt="google icon">
+                <button class="btn">Login with Google</button>
+            </div>
+        </form>
+        <!-- login form -->
+
+        <!-------------------------------------------------------------------------------------------------->
+
+        <!-- signUp form -->
+        <form action="#" class="form-signUp" method="post">
+            <div class="HeaderTitle">
+                <p>sign Up</p>
+            </div>
+
+
+            <div class="email-input">
+                <input required type="email" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="password-input">
+                <input required type="password" name="password" id="password" placeholder="create password">
+                <i class="fa-regular fa-eye-slash pw-hide"></i>
+                <p class="checkStrong"></p>
+            </div>
+
+            <div class="password-input">
+                <input required type="password" name="password" id="password" placeholder="confirm password">
+                <i class="fa-regular fa-eye-slash pw-hide"></i>
+                <p class="checkEqual"></p>
+            </div>
+
+            <div class="logbtn">
+                <button class="btn">sign up</button>
+            </div>
+
+
+            <div class="haveAccount">
+                Already have an account ? <a href="#" id="login">Login</a>
+            </div>
+
+            <div class="line">
+                <hr>
+                <p> Or</p>
+                <hr>
+            </div>
+
+            <div class="logFaceBook">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/facebook-3-logo-png-transparent.png"
+                    alt="facebookIcon">
+                <button class="btn">Login with Facebook</button>
+            </div>
+
+
+            <div class="logGoogle">
+                <img src="https://pixlok.com/wp-content/uploads/2021/04/Google-Icon-PNG-768x768.jpg" alt="google icon">
+                <button class="btn">Login with Google</button>
+            </div>
+        </form>
+        <!-- signUp form -->
+    </div>
+    <!-- main content -->
+    <!-- main js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

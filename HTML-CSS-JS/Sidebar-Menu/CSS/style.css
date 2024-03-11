@@ -1,0 +1,116 @@
+/* main role */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(159, 201, 238);
+}
+/* main role */
+
+/* header */
+.content {
+  color: rgb(138, 138, 138);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(210, 210, 210);
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+ 
+}
+nav i{
+    cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(138, 138, 138);
+}
+.links ul li:hover{
+    background-color:#4071ec;
+    color: #fff;
+}
+
+.links ul li a:hover{
+    color: #fff;
+}
+
+
+
+/* header */
+
+/* sideBar */
+.links {
+  background: #fff;
+  padding:10px ;
+  position: absolute;
+  top: 0;
+  width: 200px;
+  font-size: .9rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  left: -200px;
+
+}
+
+.links ul {
+  list-style: none;
+
+}
+.links ul li{
+    padding: 12px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+
+.links .headertit {
+    display: flex;           
+    align-items: center;      
+    gap: 10px;               
+    margin-bottom: 30px;   
+    cursor: pointer;   
+  }
+  
+/* sideBar */
+
+
+/* footer */
+.footer{
+    margin-top: 100px;
+}
+/* footer */
+
+
+@media screen and (max-width:900px){
+    nav {
+        gap: 15px;
+        padding: 15px;
+       
+      }
+      nav h2{
+        font-size: 17px;
+      }
+
+      .links{
+        width: 150px;
+        font-size: 12px;
+      
+      }
+      .links ul li{
+        padding: 9px 10px;
+      }
+}

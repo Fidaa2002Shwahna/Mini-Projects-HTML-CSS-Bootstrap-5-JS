@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #031e4f;
+}
+
+.container {
+  padding: 10px;
+  width: 100%;
+  height: 100vh;
+}
+
+.quiz {
+  background: #fff;
+  width: 600px;
+  height: 350px;
+  margin-top: 70px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  padding: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.quiz h2 {
+  padding: 10px;
+  font-weight: 600;
+  color: #031e4f;
+}
+
+.quiz h3 {
+  padding: 10px 0 5px;
+  font-size: 15px;
+}
+
+.quiz p {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.quiz .btn {
+  cursor: pointer;
+  background: #031e4f;
+  color: white;
+  text-align: center;
+  padding: 10px 40px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  outline: 0;
+  border: 0;
+  margin-top: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  visibility: hidden;
+}
+
+.result p {
+  padding: 50px;
+  text-align: center;
+  background-color: #031e4f;
+  color: #fff;
+  font-size: 30px;
+}
+
+
+
+  @media (max-width:729px) {
+    .quiz {
+      width: 300px;
+      margin-top: 60px ;
+      padding: 7px 10px;
+      
+
+    }
+    
+  }

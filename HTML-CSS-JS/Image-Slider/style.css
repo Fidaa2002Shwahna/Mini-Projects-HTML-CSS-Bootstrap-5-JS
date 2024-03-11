@@ -1,0 +1,128 @@
+/* general role */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Tahoma, Arial;
+}
+/* general role */
+
+/* slides-container  */
+
+.slides-container {
+  margin: 10px auto;
+  width: 800px;
+  height: 250px;
+  position: relative;
+}
+
+.slides-container img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  z-index: 1;
+  width: 100%;
+  height: 95%;
+}
+
+.slides-container img.active {
+  opacity: 1;
+}
+
+.slides-container .slide-number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 20px;
+  z-index: 2;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 5px 10px;
+}
+/* slides-container  */
+
+/* slide-control */
+.slide-control {
+  width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide-control .prev,
+.slide-control .next {
+  background: #009678;
+  color: #fff;
+  font-size: 16px;
+  width: 80px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 5px;
+  user-select: none;
+  width: 20%;
+}
+
+.slide-control .prev {
+  float: left;
+}
+
+.slide-control .next {
+  float: right;
+}
+
+.slide-control .prev.disabled,
+.slide-control .next.disabled {
+  background-color: rgba(0, 150, 136, 0.5);
+  cursor: no-drop;
+}
+
+.slide-control .indicates {
+  width: 60%;
+  float: left;
+}
+
+.slide-control .indicates ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+.slide-control .indicates ul li {
+  display: inline-block;
+  background: #f6f6f6;
+  color: #333;
+  font-weight: bold;
+  height: 28px;
+  width: 28px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin: 0 2px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.slide-control .indicates ul li.active {
+  background-color: #009688;
+  color: #fff;
+}
+
+/* slide-control */

@@ -1,0 +1,107 @@
+/* main role */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: hsl(206.67deg 100% 80.59%);
+}
+ul {
+  list-style: none;
+}
+/* main role */
+
+.content {
+  padding: 3rem;
+}
+
+:root {
+  --backGround: #17191b;
+}
+/* main body  */
+
+.calculator {
+  background: var(--backGround);
+  max-width: 300px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  border: #fff 1px solid;
+}
+/* main body  */
+
+/* screen */
+
+.screen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.screen input {
+  flex: 1;
+  padding: 20px;
+  direction: rtl;
+  background: var(--backGround);
+  outline: 0;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+/* screen */
+
+/* body */
+.clacBody {
+  padding: 2rem;
+}
+
+.clacBody .btns {
+  display: grid;
+  grid-template-columns: repeat(4, 45px);
+  grid-template-rows: repeat(5 auto);
+  padding: 10px;
+  gap: 10px;
+}
+
+.clacBody .btns li {
+  background-color: #2e3034;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 10px;
+  color: #0d7ade;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btns li.turn {
+  color: #fff;
+  background: #5d5d5d;
+  font-size: 13px;
+}
+
+.btns li.oparetion {
+  color: #fff;
+  background: #0d7ade;
+  font-size: 13px;
+}
+.btns li.equal {
+  grid-column: 3/5;
+}
+
+/* body */

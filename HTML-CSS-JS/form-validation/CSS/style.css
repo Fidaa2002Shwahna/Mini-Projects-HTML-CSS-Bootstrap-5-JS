@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #3f72ec;
+}
+
+a {
+  text-decoration: none;
+  color: #3f72ec;
+}
+.contnet {
+  padding: 30px;
+  width: 400px;
+  background-color: #ffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+/* header */
+.HeaderTitle p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+/* header */
+
+/* input */
+.email-input {
+  margin-top: 2rem;
+}
+
+input {
+  margin-bottom: 1.2rem;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: 0;
+  border: 0;
+  border: 1px solid #c6c6c6;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input i {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  -webkit-transform: translateY(-40%);
+  -moz-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  -o-transform: translateY(-40%);
+  right: 10px;
+  color: rgb(81, 81, 81);
+  cursor: pointer;
+}
+
+/* input */
+
+/* forget */
+.forget {
+  text-align: center;
+}
+/* forget */
+
+/* button */
+.btn {
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.logbtn button {
+  background-color: #3f72ec;
+}
+
+/* button */
+
+/* have an account */
+.haveAccount {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+/* have an account */
+
+/* line */
+.line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.line hr {
+  width: 50%;
+  height: 1px;
+}
+
+.line p {
+  margin: 0 5px;
+}
+/* line */
+
+/* logFaceBook */
+.logFaceBook,
+.logGoogle {
+  position: relative;
+}
+.logFaceBook img,
+.logGoogle img {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+.logFaceBook button {
+  background-color: #3b5998;
+}
+/* logFaceBook */
+
+/* logGoogle */
+.logGoogle button {
+  color: rgb(81, 81, 81);
+  border: 1px solid rgba(81, 81, 81, 0.504);
+}
+/* logGoogle */
+
+/* form-signUp */
+.form-signUp {
+  display: none;
+}
+/* form-signUp */
+
+/* check password paragraph */
+.checkStrong,
+.checkEqual {
+  position: absolute;
+  font-size: 10px;
+  color: red;
+  top: 70%;
+}

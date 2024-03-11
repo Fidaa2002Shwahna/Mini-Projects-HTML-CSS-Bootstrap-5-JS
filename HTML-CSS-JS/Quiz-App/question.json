@@ -1,0 +1,79 @@
+[
+    {
+    "title":"What do you understand by HTML?",
+    "answer_1":"HTML describes the structure of a webpage",
+    "answer_2":"HTML is the standard markup language mainly used to create web pages",
+    "answer_3":"HTML consists of a set of elements that helps the browser how to view the content",
+    "answer_4":"All of the above",
+    "right-answer":"All of the above"
+    },
+    {
+        "title":" HTML stands for ___",
+        "answer_1":"HyperText Markup Language",
+        "answer_2":"HyperText Machine Language",
+        "answer_3":"HyperText Marking Language",
+        "answer_4":"HighText Marking Language",
+        "right-answer":"HyperText Markup Language"
+    }
+    ,
+    {
+        "title":" Which is used to read an HTML page and render it?",
+        "answer_1":"Web server",
+        "answer_2":"Web network",
+        "answer_3":"Web browser",
+        "answer_4":"Web matrix",
+        "right-answer":"Web browser" 
+    }
+    ,
+    {
+        "title":"Which is used to create Web Pages ?",
+        "answer_1":"C++",
+        "answer_2":"Java",
+        "answer_3":"HTML",
+        "answer_4":"JVM",
+        "right-answer":"HTML"
+    },
+    {
+        "title":" HTML is a set of markup ___.",
+        "answer_1":"tags",
+        "answer_2":"sets",
+        "answer_3":"attributes",
+        "answer_4":"none of the above",
+        "right-answer":"tags" 
+    },
+    {
+        "title":" HTML tags are used to describe document ___.",
+        "answer_1":"definition",
+        "answer_2":"content",
+        "answer_3":"language",
+        "answer_4":"model",
+        "right-answer": "content"
+    },
+    {
+        "title":"HTML program is saved using ___ extension.",
+        "answer_1":".htmn",
+        "answer_2":".html",
+        "answer_3":".htnl",
+        "answer_4":".htnl",
+        "right-answer": ".html"
+    },
+    {
+        "title":"HTML program can be read and rendered by ___.",
+        "answer_1":"Compiler",
+        "answer_2":"Server",
+        "answer_3":"Web Browser",
+        "answer_4":"Interpreter",
+        "right-answer":"Web Browser" 
+    },
+    {
+        "title":"HTML tags are surrounded by ___ brackets.",
+        "answer_1":"Angle",
+        "answer_2":"Curly",
+        "answer_3":"Round",
+        "answer_4":"Squart",
+        "right-answer":"Angle" 
+    }
+]
+
+
+
