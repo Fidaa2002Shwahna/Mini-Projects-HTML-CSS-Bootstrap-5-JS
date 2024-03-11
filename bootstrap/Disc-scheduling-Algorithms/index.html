@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>Disc scheduling Algorithms</title>
+    <!-- call bootstrap -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- call fontawesome -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- main css file -->
+    <link rel="stylesheet" href="CSS/disc.css" />
+    <!-- render css normally -->
+    <link rel="stylesheet" href="CSS/Normalize.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-center">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <a class="me-2 nav-link active btn main-btn  rounded-pill text-light ps-4 pe-4" aria-current="page"
+                        href="#">Home</a>
+
+                    <li class="nav-item">
+                        <a class="me-2 nav-link rounded-pill" href="#">TYPES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="me-2 nav-link rounded-pill" href="#FCFS">FCFS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="me-2 nav-link rounded-pill" href="#">CSCAN</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="me-2 nav-link rounded-pill" href="#">LOOK</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="me-2 nav-link rounded-pill" href="#">SCAN</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="me-2 nav-link rounded-pill" href="#">COMPARE</a>
+                    </li>
+
+                    <a class="me-2 nav-link active btn main-btn  rounded-pill text-light ps-4 pe-4" href="#">ABOUT
+                        US</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start landing -->
+    <div class="landing pt-5 pb-5">
+        <div class="container">
+            <div class="row  d-flex align-items-center">
+                <div class="col-12 col-md-6 text-center">
+                    <h2 class="fw-bold">Disc scheduling Algorithms</h2>
+                    <p class="text-black-50 lh-lg">Disk scheduling is done by operating systems to schedule I/O requests
+                        arriving for the disk. Disk
+                        scheduling is also known as I/O scheduling.</p>
+                    <p class="fw-bold">Key Terms :</p>
+                    <p class="lh-lg w-100">Seek Time:Seek time is the time taken to locate the disk arm to a specified
+                        track where the data
+                        is to be read or write. So the disk scheduling algorithm that gives minimum average seek time is
+                        better.<br>
+                        Head : Is defined as the starting position of the disk arm</p>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <img src="img/mainDisk.png" alt="" class="w-100 ms-4">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end landing -->
+
+    <!-- start type -->
+    <div class="type text-center pt-5 pb-5">
+        <div class="container">
+            <!-- title -->
+            <div class="title  ms-auto me-auto mb-5">
+                <h6>Disc scheduling Algorithms</h6>
+                <h2 class="fw-bold position-relative">The Types</h2>
+                <p class="text-black-50">The following are six different types of Disc scheduling algorithms.</p>
+            </div>
+            <!-- title -->
+
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="box position-relative">
+                        <span>UI/UX</span>
+                        <div class="content">
+                            <img src="img/code-icon.png" alt="" class="img-fluid mb-3">
+                            <h5>FCFS</h5>
+                            <p class="w-75 ms-auto me-auto text-black-50">The requests are addressed in the order
+                                they arrive in the disk queue.</p>
+                            <a href="#" class="btn btn-main rounded-pill text-uppercase ps-4 pe-4 pt-2 pb-2">know
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="box position-relative">
+                        <span>code</span>
+                        <div class="content">
+                            <img src="img/code-icon.png" alt="" class="img-fluid mb-3">
+                            <h5>SSTF</h5>
+                            <p class="w-75 ms-auto me-auto text-black-50">Requests having shortest seek time are
+                                executed first.</p>
+                            <a href="#" class="btn btn-main rounded-pill text-uppercase  ps-4 pe-4 pt-2 pb-2">know
+                                more</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="box position-relative">
+                        <span>code</span>
+                        <div class="content">
+                            <img src="img/code-icon.png" alt="" class="img-fluid mb-3">
+                            <h5>CSCAN</h5>
+                            <p class="w-75 ms-auto me-auto text-black-50">The disk arm again scans the path that
+                                has been scanned, after reversing its direction.</p>
+                            <a href="#" class="btn btn-main rounded-pill text-uppercase  ps-4 pe-4 pt-2 pb-2">know
+                                more</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="box position-relative">
+                        <span>code</span>
+                        <div class="content">
+                            <img src="img/code-icon.png" alt="" class="img-fluid mb-3">
+                            <h5>LOOK</h5>
+                            <p class="w-75 ms-auto me-auto text-black-50">Disk arm in spite of going to the end of the
+                                disk goes only to the last request to be serviced in front of the head and then reverses
+                                its direction from there.</p>
+                            <a href="#" class="btn btn-main rounded-pill text-uppercase  ps-4 pe-4 pt-2 pb-2">know
+                                more</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="box position-relative">
+                        <span>code</span>
+                        <div class="content">
+                            <img src="img/code-icon.png" alt="" class="img-fluid mb-3">
+                            <h5>SCAN</h5>
+                            <p class="w-75 ms-auto me-auto text-black-50">The disk arm moves into a particular direction
+                                and services the requests coming in its path and after reaching the end of disk, it
+                                reverses its direction.</p>
+                            <a href="#" class="btn btn-main rounded-pill text-uppercase  ps-4 pe-4 pt-2 pb-2">know
+                                more</a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-md-6 col-lg-4 text-center">
+                    <div class="box position-relative">
+                        <span>code</span>
+                        <div class="content">
+                            <img src="img/code-icon.png" alt="" class="img-fluid mb-3">
+                            <h5>CLOOK</h5>
+                            <p class="w-75 ms-auto me-auto text-black-50">The disk arm in spite of going to the end goes
+                                only to the last request to be serviced in front of the head and then from there goes to
+                                the other end’s last request.</p>
+                            <a href="#" class="btn btn-main rounded-pill text-uppercase  ps-4 pe-4 pt-2 pb-2">know
+                                more</a>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+    </div>
+    <!-- end type -->
+
+
+    <!-- start FCFS Algorithm -->
+    <div class="fcfs-algorithm  pt-5 pb-5" id="FCFS">
+        <div class="container">
+            <!-- title -->
+            <div class="title  ms-auto me-auto mb-5">
+                <h6>Disc scheduling Algorithms</h6>
+                <h2 class="fw-bold position-relative">FCFS Algorithm</h2>
+            </div>
+            <!-- title -->
+            <div class="row  d-flex align-items-center">
+
+                <div class="col-12 col-md-6 main-card text-center">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <!-- start card -->
+                            <div class="carousel-item active position-relative card pt-4 pb-4">
+                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                <h3 class="fw-bold pb-4">The Algorithm</h3>
+                                <p class="review-text lh-lg mb-4">
+                                    FCFS is the simplest disk scheduling algorithm. As the name suggests, this algorithm
+                                    entertains requests
+                                    in the order they arrive in the disk queue. The algorithm looks very fair and there
+                                    is no starvation (all
+                                    requests are serviced sequentially) but generally, it does not provide the fastest
+                                    service
+                                </p>
+                            </div>
+                            <!-- end card -->
+
+
+                            <!-- start card -->
+                            <div class="carousel-item  position-relative card pt-4 pb-4">
+                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                <h3 class="fw-bold pb-4">Step1</h3>
+                                <p class="review-text lh-lg mb-4">
+                                    Let Request array represents an array storing indexes of tracks that have been
+                                    requested in
+                                    ascending order of their time of arrival. ‘head’ is the position of disk head.
+                                </p>
+                            </div>
+                            <!-- end card -->
+
+                            <!-- start card -->
+                            <div class="carousel-item position-relative card pt-4 pb-4">
+                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                <h3 class="fw-bold pb-4">Step2</h3>
+                                <p class="review-text lh-lg mb-4">
+                                    Let us one by one take the tracks in default order and calculate the absolute
+                                    distance of the
+                                    track from the head.
+                                </p>
+                            </div>
+                            <!-- end card -->
+
+                            <!-- start card -->
+                            <div class="carousel-item position-relative card pt-4 pb-4">
+                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                <h3 class="fw-bold pb-4">Step3</h3>
+                                <p class="review-text lh-lg mb-4">
+                                    Increment the total seek count with this distance.
+                                </p>
+                            </div>
+                            <!-- end card -->
+
+                            <!-- start card -->
+                            <div class="carousel-item position-relative card pt-4 pb-4">
+                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                <h3 class="fw-bold pb-4">Step4</h3>
+                                <p class="review-text lh-lg mb-4">
+                                    Currently serviced track position now becomes the new head position
+                                </p>
+                            </div>
+                            <!-- end card -->
+
+                            <!-- start card -->
+                            <div class="carousel-item position-relative card pt-4 pb-4">
+                                <span><i class="fa-solid fa-quote-left"></i></span>
+                                <h3 class="fw-bold pb-4">Step5</h3>
+                                <p class="review-text lh-lg mb-4">
+                                    Go to step 2 until all tracks in request array have not been serviced.
+                                </p>
+                            </div>
+                            <!-- end card -->
+                        </div>
+                    </div>
+                    <a href="FCFS.html"
+                        class="text-center btn main-btn rounded-pill ps-4 pe-4 text-uppercase">calculate</a>
+                </div>
+
+                <div class="col-12 col-md-6 text-center">
+                    <img src="img/FCFS.png" alt="" class="w-100 ms-4">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end FCFS Algorithm -->
+
+
+    <!-- footer start -->
+    <div class="footer pt-5 pb-5 bg-dark">
+        <div class="container">
+            <div class="col-sm-12 text-center">
+                <ul class="list-unstyled d-flex justify-content-center">
+                    <li><a href="#" class="rounded-pill"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="rounded-pill text-danger"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#" class="rounded-pill"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#" class="rounded-pill"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer end -->
+
+
+    <!-- call bundle in js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- call fontawesome in js -->
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>
